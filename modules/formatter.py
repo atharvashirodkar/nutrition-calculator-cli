@@ -30,3 +30,16 @@ def format_report_with_weights(data):
     )
 
     return report
+
+def report_to_dict(report):
+    return {
+        "id": report.id,
+        "current_weight": report.current_weight,
+        "goal_weight": report.goal_weight,
+        "calories": report.calories,
+        "protein": report.protein,
+        "fat": report.fat,
+        "fiber": report.fiber,
+        "carbohydrates": report.carbohydrates,
+        "created_at": report.created_at,
+    }
